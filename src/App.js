@@ -63,34 +63,35 @@ const App = () => {
                         <div className='fixed md:static bg-main-bg dark:bg-main-dark-bg navbar w-full'>
                             <NavBar />
                         </div>
-                    </div>
-                    <div>
-                        <Routes>
-                            {/* Dashboard - Приборная панель */}
-                            <Route path='/' element={ <Ecommerce /> } />
-                            <Route path='/ecommerce' element={ <Ecommerce /> } />
+                    
+                        <div>
+                            <Routes>
+                                {/* Dashboard - Приборная панель */}
+                                <Route path='/' element={ <Ecommerce /> } />
+                                <Route path='/ecommerce' element={ <Ecommerce /> } />
 
-                            {/* Pages - Страницы */}
-                            <Route path='/orders' element={ <Orders /> } /> {/* Заказы */}
-                            <Route path='/employees' element={ <Employees /> } /> {/* Сотрудники */}
-                            <Route path='/customers' element={ <Customers /> } /> {/* Клиенты */}
+                                {/* Pages - Страницы */}
+                                <Route path='/orders' element={ <Orders /> } /> {/* Заказы */}
+                                <Route path='/employees' element={ <Employees /> } /> {/* Сотрудники */}
+                                <Route path='/customers' element={ <Customers /> } /> {/* Клиенты */}
 
-                            {/* Apps - Приложения */}
-                            <Route path='/kanban' element={ <Kanban /> } /> {/* Доска канбана */}
-                            <Route path='/editor' element={ <Editor /> } /> {/* Редактор */}
-                            <Route path='/calendar' element={ <Calendar /> } /> {/* Календарь */}
-                            <Route path='/color-picker' element={ <ColorPicker /> } /> {/* Выбор цвета */}
+                                {/* Apps - Приложения */}
+                                <Route path='/kanban' element={ <Kanban /> } /> {/* Доска канбана */}
+                                <Route path='/editor' element={ <Editor /> } /> {/* Редактор */}
+                                <Route path='/calendar' element={ <Calendar /> } /> {/* Календарь */}
+                                <Route path='/color-picker' element={ <ColorPicker /> } /> {/* Выбор цвета */}
 
-                            {/* Charts - Диаграммы */}
-                            <Route path='/line' element={ <Line /> } /> {/* Линия */}
-                            <Route path='/area' element={ <Area /> } /> {/* Область */}
-                            <Route path='/bar' element={ <Bar /> } /> {/* Столбы */}
-                            <Route path='/pie' element={ <Pie /> } /> {/* Круг */}
-                            <Route path='/financial' element={ <Financial /> } /> {/* Финансы */}
-                            <Route path='/color-mapping' element={ <ColorMapping /> } /> {/* Цветовое отображение */}
-                            <Route path='/pyramid' element={ <Pyramid /> } /> {/* Пирамида */}
-                            <Route path='/stacked' element={ <Stacked /> } /> {/* Сложенные диаграммы */}
-                        </Routes>
+                                {/* Charts - Диаграммы */}
+                                <Route path='/line' element={ <Line /> } /> {/* Линия */}
+                                <Route path='/area' element={ <Area /> } /> {/* Область */}
+                                <Route path='/bar' element={ <Bar /> } /> {/* Столбы */}
+                                <Route path='/pie' element={ <Pie /> } /> {/* Круг */}
+                                <Route path='/financial' element={ <Financial /> } /> {/* Финансы */}
+                                <Route path='/color-mapping' element={ <ColorMapping /> } /> {/* Цветовое отображение */}
+                                <Route path='/pyramid' element={ <Pyramid /> } /> {/* Пирамида */}
+                                <Route path='/stacked' element={ <Stacked /> } /> {/* Сложенные диаграммы */}
+                            </Routes>
+                        </div>
                     </div>
                 </div>
             </BrowserRouter>
