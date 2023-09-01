@@ -18,3 +18,6 @@
 4. Tailwind CSS:
     a: npm install -D tailwindcss postcss autoprefixer
     b: npx tailwindcss init
+
+Документация:
+https://ej2.syncfusion.com/react/documentation/getting-started/quick-start
