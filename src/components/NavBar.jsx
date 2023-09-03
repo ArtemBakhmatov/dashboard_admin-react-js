@@ -63,7 +63,7 @@ const NavBar = () => {
             <NavButton  
                 title='Menu' 
                 customFunc={ () => setActiveMenu((prevActiveMenu) => !prevActiveMenu) } 
-                color='{ currentContext }'
+                color={ currentColor }
                 icon={ <AiOutlineMenu /> }
             />
             <div className='flex'>
